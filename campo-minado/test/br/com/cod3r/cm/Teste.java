@@ -3,7 +3,6 @@ package br.com.cod3r.cm;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
 
 public class Teste {
 
