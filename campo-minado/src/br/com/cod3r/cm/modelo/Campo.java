@@ -5,7 +5,7 @@ import br.com.cod3r.cm.excecao.ExplosaoException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Campo {
+public class  Campo {
 
     private final int linha;
     private final int coluna;
@@ -20,6 +20,7 @@ public class Campo {
         this.linha = linha;
         this.coluna = coluna;
     }
+
 
     public boolean adicionarVizinho(Campo vizinho){
         boolean linhaDiferente = linha != vizinho.linha;
@@ -72,6 +73,10 @@ public class Campo {
 
     public void minar(){
        minado = true;
+    }
+
+    public boolean isMinado(){
+        return minado;
     }
 
     public boolean isMarcado(){
