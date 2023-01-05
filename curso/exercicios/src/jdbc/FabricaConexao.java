@@ -9,7 +9,7 @@ public class FabricaConexao {
     public static Connection getConexao() throws SQLException {
 
         try {
-            final String url = "jdbc:mysql://localhost?verifyServerCertificate=false&UseSSL=true";
+            final String url = "jdbc:mysql://localhost/curso_java?verifyServerCertificate=false&UseSSL=true";
             final String usuario = "root";
             final String senha = "root123";
 
