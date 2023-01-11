@@ -45,7 +45,6 @@ public class UpdatePessoa {
             System.out.println("Pessoa não encontrada!");
         }
 
-
         conexao.close();
         sc.close();
     }
