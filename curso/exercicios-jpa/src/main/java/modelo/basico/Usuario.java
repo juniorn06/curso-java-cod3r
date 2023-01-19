@@ -10,6 +10,7 @@ public class Usuario {
 
     @Id // Indica que o atributo será a chave primária da tabela
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Indica que o atributo será auto incrementado
+    // IDENTITY: Indica um valor único a cada usuário, e o valor não é compartilhado entre as tabelas
     private Long id;
     private String nome;
     private String email;
