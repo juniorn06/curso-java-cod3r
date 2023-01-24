@@ -14,7 +14,5 @@ public class NovoClienteAssento1 {
         DAO<Object> dao = new DAO<>();
 
         dao.abrirT().incluir(assento).incluir(cliente).fecharT().fechar();
-
-
     }
 }
