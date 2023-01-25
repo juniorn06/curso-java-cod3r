@@ -15,7 +15,7 @@ public class ItemPedido {
     private Produto produto;
     @Column(nullable = false)
     private int quantidade;
-    @Column(nullable = false)
+    @Column(nullable = false )
     private Double preco;
 
     public ItemPedido(){

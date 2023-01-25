@@ -3,6 +3,8 @@ package modelo.basico.umpramuitos;
 import javax.persistence.*;
 import javax.xml.crypto.Data;
 import java.util.Date;
+import java.util.List;
+
 @Entity
 public class Pedido {
     @Id
@@ -10,9 +12,19 @@ public class Pedido {
     private Long id;
     @Column(nullable = false)
     private Date data;
+    @OneToMany(mappedBy = "pedido")
+    private List<ItemPedido> itens;
 
     public Pedido(){
         this(new Date());
+    }
+
+    public List<ItemPedido> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemPedido> itens) {
+        this.itens = itens;
     }
 
     public Pedido(Date data) {
